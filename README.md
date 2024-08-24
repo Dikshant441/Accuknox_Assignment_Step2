@@ -2,7 +2,7 @@
 
 > Frontend-> ReactJS, Redux, Javascrit, TailwindCSS 
 
-![Screenshot 2024-08-24 085619] (https://github.com/user-attachments/assets/c8195fee-c650-4e74-9012-9b5bd1fd6f02)
+![Screenshot 2024-08-24 085619](https://github.com/user-attachments/assets/c8195fee-c650-4e74-9012-9b5bd1fd6f02)
 
 ## Instructions on How to Run/Start the Project on a Local Server
 1. #### clone the repo using this command
