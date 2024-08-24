@@ -31,14 +31,14 @@ const Dashboard = () => {
 
   return (
     <div className="p-4 border-2 bg-slate-200">
-      <div className="flex justify-between items-center mb-4">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-4">
         <span className="text-xl font-bold">CNAPP DASHBOARD</span>
         <input
           type="text"
           placeholder="Search widget"
           value={searchQuery}
           onChange={handleSearchChange}
-          className="p-2 border rounded-xl w-1/3"
+          className="p-2 border rounded-xl w-full md:w-1/2 lg:w-1/3"
         />
         <button className="p-2 font-semibold rounded-lg bg-white">
           Add Widget +
@@ -46,9 +46,9 @@ const Dashboard = () => {
       </div>
 
       {categories.map((category) => (
-        <div key={category.id}>
-          <h2 className="text-lg font-bold mb-1">{category.name}</h2>
-          <div className="flex overflow-x-auto gap-4 mb-4">
+        <div key={category.id} className="mb-3">
+          <h2 className="text-lg font-bold mb-2">{category.name}</h2>
+          <div className="flex flex-wrap gap-3">
             {category.widgets
               .filter((widget) =>
                 widget.name.toLowerCase().includes(searchQuery)
@@ -56,7 +56,7 @@ const Dashboard = () => {
               .map((widget) => (
                 <div
                   key={widget.id}
-                  className="bg-white p-2 border rounded-xl shadow-sm flex-shrink-0 w-[32%] h-52"
+                  className="bg-white p-2 border rounded-xl shadow-sm flex-shrink-0 w-full sm:w-1/2 md:w-2/3 lg:w-[32%] h-52"
                 >
                   <div className="flex justify-between items-center">
                     <h3 className="text-base font-bold">{widget.name}</h3>
@@ -74,7 +74,7 @@ const Dashboard = () => {
                   </p>
                 </div>
               ))}
-            <div className="p-2 bg-white rounded-md flex flex-col justify-center w-[32%]">
+            <div className="p-2 bg-white rounded-md flex flex-col justify-center w-full sm:w-1/2 md:w-2/3 lg:w-[32%] h-52">
               <input
                 type="text"
                 placeholder="Widget Name"
@@ -97,7 +97,7 @@ const Dashboard = () => {
               />
               <button
                 onClick={() => handleAddWidget(category.id)}
-                className="p-1 ml-36 w-1/3 border rounded"
+                className="p-1 border rounded w-1/3 ml-36"
               >
                 + Add Widget
               </button>
