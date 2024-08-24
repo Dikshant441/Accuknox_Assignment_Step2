@@ -1,8 +1,28 @@
-# React + Vite
+# AccuKnox - Assignment - Front-End Trainee
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Frontend-> ReactJS, Redux, Javascrit, TailwindCSS 
 
-Currently, two official plugins are available:
+![Screenshot 2024-08-24 085619] (https://github.com/user-attachments/assets/c8195fee-c650-4e74-9012-9b5bd1fd6f02)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instructions on How to Run/Start the Project on a Local Server
+1. #### clone the repo using this command
+    ```bash
+    git clone https://github.com/Dikshant441/Accuknox_Assignment_Step2.git
+    ```
+2. #### Install npm dependencies
+    ```bash
+    npm install or npm i
+    ```
+3. #### Start the development server:
+    ```bash
+    npm run dev
+    ```
+4. #### Open your browser and navigate to:
+     ```bash
+    http://localhost:5173
+    ```
+5. #### Open your browser and navigate to:
+     ```bash
+    https://dashb0ard2.netlify.app/
+    ```
+## For any queries related to the project, contact at singhdikshant200@gmail.com
